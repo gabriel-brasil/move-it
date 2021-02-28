@@ -1,7 +1,12 @@
-import '../styles/global.css';
+import { ChallengeProvider } from '../contexts/ChallengeContext'
+
 import Head from 'next/head';
 
+import '../styles/global.css';
+
+
 function MyApp({ Component, pageProps }) {
+
   return (
     <>
       <Head>
@@ -10,7 +15,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600&display=swap" rel="stylesheet" />
       </Head>
-      <Component {...pageProps} />
+      <ChallengeProvider>
+        <Component {...pageProps} />
+      </ChallengeProvider>
     </>
   );
 }
