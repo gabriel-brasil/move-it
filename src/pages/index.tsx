@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import { GetServerSideProps } from 'next';
 
 import { CompletedChallenge } from "../components/CompletedChallenges";
@@ -19,9 +18,6 @@ interface HomeProps {
 
 export default function Home(props: HomeProps) {
 
-  console.log(props);
-
-
   return (
     <ChallengeProvider
       level={props.level}
@@ -30,11 +26,6 @@ export default function Home(props: HomeProps) {
 
     >
       <div className={styles.container}>
-
-        <Head>
-          <title>Move It ~ Início</title>
-        </Head>
-
         <ExperienceBar />
 
         <CountdownProvider>
