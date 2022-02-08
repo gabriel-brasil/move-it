@@ -5,7 +5,7 @@
   border-radius: 5px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
   padding: 1.5rem 2rem;
-  
+
   display: flex;
 
   flex-direction: column;
@@ -33,7 +33,7 @@
   align-items: center;
   line-height: 1.4;
   max-width: 70%;
-  margin-top: 3rem
+  margin-top: 3rem;
 }
 
 .challengeNotActive p img {
@@ -84,7 +84,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   border: 0;
   border-radius: 5px;
 
@@ -92,7 +92,6 @@
 
   font-size: 1rem;
   font-weight: 600;
-  
 }
 
 .challengeActive footer button.challengeFailedButton {
@@ -109,4 +108,10 @@
 
 .challengeActive footer button.challengeSucceededButton:hover {
   background: var(--dark-green);
+}
+
+@media (max-width: 768px) {
+  .challengeActive main p {
+    margin-bottom: 1.5rem;
+  }
 }

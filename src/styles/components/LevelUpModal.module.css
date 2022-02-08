@@ -51,3 +51,10 @@
   padding: 10px;
   font-size: 0px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    box-shadow: 0px 0px 8px -2px #333;
+    width: 90%;
+  }
+}
