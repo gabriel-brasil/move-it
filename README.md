@@ -6,8 +6,6 @@ Este projeto foi desenvolvido com React e Next.js durante a Next Level Week 4 da
 
 ![Move.it](https://raw.githubusercontent.com/gabriel-brasil/move-it/main/src/images/print-projeto.jpg)
 
-Acesse a demo: [Move It](https://move-it-gabriel-brasil.vercel.app/)
-
 ## ✨ Funcionalidades
 
 - Timer de foco com contagem regressiva de 25 minutos
